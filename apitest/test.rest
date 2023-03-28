@@ -1,0 +1,19 @@
+POST https://qaapi.jahernotice.com/Admin/SignUp HTTP/1.1
+Content-Type: application/json
+
+ {
+ "FirstName": "rakesh jain",
+ "Email": "mebabi4201@cyclesat.com",
+ "Password": "12345",
+ "LastName": "jain",
+ "MobileNo": "9876512343"
+ }
+
+####
+POST https://qaapi.jahernotice.com/Admin/OTP/verify HTTP/1.1
+Content-Type: application/json
+ 
+{
+ "Id": "41",
+ "OTP": "636564"
+}

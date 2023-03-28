@@ -3,6 +3,7 @@ import { FormControl, FormGroup, Validators } from '@angular/forms';
 import { RegisterserviceService } from '../services/registerservice.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ToastrService } from 'ngx-toastr';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-register',
@@ -12,7 +13,8 @@ import { ToastrService } from 'ngx-toastr';
 export class RegisterComponent {
   constructor(
     private registrservice: RegisterserviceService,
-    private toastr: ToastrService
+    private toastr: ToastrService,
+    private route:Router
   ) {}
   public registerform = new FormGroup({
     FirstName: new FormControl('', [Validators.required]),
@@ -30,7 +32,9 @@ export class RegisterComponent {
         this.toastr.error('Something went wrong');
 
         if (data.status == 200) {
+          this.route.navigate(["/otp",data.data.recordsets[0].ID]);
           this.toastr.success(data.data.message);
+
           // location.reload()
         } else if (data.status == 412) {
           this.toastr.error(data.data.message);

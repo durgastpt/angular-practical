@@ -9,35 +9,26 @@
             <div class="form-outline mb-4 text-center">
            <img src="assets/img/Screenshot (65) (1).png" class="w-75 "  alt="">
             </div>
-  
-    
-   
-           
-<div class="container p-5 ">
-
-    <p class="text-white text-center ">OTP (one Time Password)</p>
-    <form #ngform  (ngSubmit)="otpsubmit()">
+       
+<div class="container p-5 text-center ">
+    <form #ngform  (ngSubmit)="otpsubmit()" [formGroup]="otpform">
         <!-- [formGroup]="otpForm" -->
-        <div class="m-0">
-            <input type="" formControlName="otp" placeholder="Otp(one Time Password)" id="">
-            <span style="color: white" *ngIf="!otpForm.controls['otp'].valid && 
+        <div class="m-0  ">
+            <input type="" formControlName="otp" placeholder="Otp(one Time Password)" id="" class="form-control text-center">
+            <!-- <span style= "color: white"*ngIf="!otpForm.controls['otp'].valid && 
                         otpForm.controls['otp']?.touched"> <br>
                         *required (Enter Otp , min 6
-                digits) </span>
+                digits) </span> -->
         </div>
         <!-- <button type="submit" class="btn btn-primary mt-3" [disabled]="flag"  >Submit</button> -->
 
         <!-- reSend otp -->
-
-
-
-
-         
             
             <!-- Password input -->
             <div class="form-outline mb-4 p-3 text-center">
-             <button type="submit" class="btn btn-success w-100 "  > submit</button>
+             <button type="submit" class="btn btn-success w-100 "> submit</button>
             </div>
+            
             <!-- 2 column grid layout for inline styling -->
            
           

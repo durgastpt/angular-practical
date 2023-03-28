@@ -13,6 +13,7 @@ import { ForgetpwdComponent } from './forgetpwd/forgetpwd.component';
 import { OtpComponent } from './otp/otp.component';
 import { HttpClientModule } from '@angular/common/http';
 import { ToastrModule } from 'ngx-toastr';
+import { EppTableComponent } from './epp-table/epp-table.component';
 
 
 
@@ -24,7 +25,8 @@ import { ToastrModule } from 'ngx-toastr';
     LoginComponent,
     RegisterComponent,
     ForgetpwdComponent,
-    OtpComponent
+    OtpComponent,
+    EppTableComponent
   ],
   imports: [
     BrowserModule,

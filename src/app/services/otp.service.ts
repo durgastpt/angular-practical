@@ -4,13 +4,12 @@ import { Injectable } from '@angular/core';
 @Injectable({
   providedIn: 'root'
 })
-export class RegisterserviceService {
- 
-
+export class OtpService {
   constructor(private http: HttpClient) { }
-url = 'https://qaapi.jahernotice.com/Admin/SignUp'
-data:any
-  registerservicedata(data:any){
-return this.http.post(this.url , data)
+  url = 'https://qaapi.jahernotice.com/Admin/OTP/verify'
+  data: any
+  otpservicedata(data: any) {
+    return this.http.post(this.url, data)
   }
+
 }
