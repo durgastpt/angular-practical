@@ -1,56 +1,30 @@
-
 <div class="p-5 ">
 
-    <div class="container  p-5  formclass w-50">
-        <form class="" >
+  <div class="container  p-5  formclass w-50">
+      <form class="" >
 
-            <!-- <p class="text-center">Enter your emial address  and we'll send you a New password.</p> -->
-  
-            <div class="form-outline mb-4 text-center">
-           <img src="assets/img/Screenshot (65) (1).png" class="w-75 "  alt="">
-            </div>
-       
+
+          <div class="form-outline mb-4 text-center">
+         <img src="assets/img/Screenshot (65) (1).png" class="w-75 "  alt="">
+          </div>
+     
 <div class="container p-5 text-center ">
-    <form #ngform  (ngSubmit)="otpsubmit()" [formGroup]="otpform">
-        <!-- [formGroup]="otpForm" -->
-        <div class="m-0  ">
-            <input type="" formControlName="otp" placeholder="Otp(one Time Password)" id="" class="form-control text-center">
-            <!-- <span style= "color: white"*ngIf="!otpForm.controls['otp'].valid && 
-                        otpForm.controls['otp']?.touched"> <br>
-                        *required (Enter Otp , min 6
-                digits) </span> -->
-        </div>
-        <!-- <button type="submit" class="btn btn-primary mt-3" [disabled]="flag"  >Submit</button> -->
-
-        <!-- reSend otp -->
-            
-            <!-- Password input -->
-            <div class="form-outline mb-4 p-3 text-center">
-             <button type="submit" class="btn btn-success w-100 "> submit</button>
-            </div>
-            
-            <!-- 2 column grid layout for inline styling -->
-           
-          
-              <!-- <div class="col">
-                 Simple link -->
-                <!-- <a href="#!">Forgot password?</a> -->
-              <!-- </div>  -->
-        
-          
-            <!-- Submit button -->
-            <!-- <button type="submit" class="btn btn-primary btn-block mb-4"></button> -->
-          
-            <!-- Register buttons -->
-            <div class="text-center">
-              <!-- <p>Not a member? <a href="#!" class="register">Register</a></p> -->
-               <!-- <a href="">Forget Your Password?</a> -->
+  <form #ngform  (ngSubmit)="otpsubmit()" [formGroup]="otpform">
   
-  
-              <!-- <p class="p-3">Back to   <a href="">Log in </a></p> -->
-           
-            </div>
-          </form>
-    </div>
+      <div class="m-0  ">
+          <input type="" formControlName="otp" placeholder="Otp(one Time Password)" id="" class="form-control text-center">
     
-      
+      </div>
+  
+          
+          <!-- Password input -->
+          <div class="form-outline mb-4 p-3 text-center">
+           <button type="submit" class="btn btn-success w-100 "> submit</button>
+          </div>
+       
+          <div class="text-center">
+          
+         
+          </div>
+        </form>
+  </div>

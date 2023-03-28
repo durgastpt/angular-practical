@@ -1,0 +1,44 @@
+<table class="table">
+    <thead>
+      <tr >
+        <th scope="col">userID</th>
+        <th scope="col">FirstName</th>
+        <th scope="col">LastName</th>
+        <th scope="col">MobileNo</th>
+        <th scope="col">EmailID</th>
+        <th scope="col">EPPCount</th>
+    
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of users">
+        <th scope="row"></th>
+        <!-- <td>{{user.userID}}</td> -->
+        <td>{{user.FirstName}}</td>
+        <td>{{user.LastName}}</td>
+        <td>{{user.MobileNo}}</td>
+        <td>{{user.EmailID}}</td>
+        <td>{{user.EPPCount}}</td>
+      </tr>
+      <!-- <tr>
+        <th scope="row">2</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>@fat</td>
+        
+      </tr>
+      <tr>
+        <th scope="row">3</th>
+        <td>Jacob</td>
+        <td>Thornton</td>
+        <td>@fat</td>
+        <td>@fat</td>
+  
+      </tr> -->
+    </tbody>
+
+   
+  </table>
+
+  
